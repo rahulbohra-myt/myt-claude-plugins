@@ -1,0 +1,20 @@
+{
+  "name": "myt-claude-plugins",
+  "owner": {
+    "name": "Rahul Bohra"
+  },
+  "metadata": {
+    "description": "MyYogaTeacher's internal Claude plugins for content, copy, and growth workflows.",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "myt-lp-product-copy",
+      "source": "myt-lp-product-copy",
+      "description": "Generate on-brand landing page and product/feature copy for MyYogaTeacher — paid ad LPs, event/workshop LPs, teacher recruitment LPs, and product/feature assets.",
+      "version": "1.0.0",
+      "category": "marketing"
+    }
+  ]
+}

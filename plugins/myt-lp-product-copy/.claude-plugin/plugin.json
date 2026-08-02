@@ -1,0 +1,9 @@
+{
+  "name": "myt-lp-product-copy",
+  "version": "1.0.0",
+  "description": "Generate on-brand landing page and product/feature copy for MyYogaTeacher — paid ad LPs, event/workshop LPs, teacher recruitment LPs, and product/feature assets (popups, banners, cards, brochures, communication docs). All skills reference the bundled MYT Brand Core for terminology, tone, and conversion-copywriting standards.",
+  "author": {
+    "name": "Rahul Bohra"
+  },
+  "keywords": ["myyogateacher", "landing-pages", "copywriting", "marketing", "conversion-copy"]
+}
