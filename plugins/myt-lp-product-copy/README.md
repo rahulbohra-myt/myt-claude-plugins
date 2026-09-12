@@ -11,6 +11,17 @@ bundled inside it.
 - `MYT_Brand_Core.md` — the single source of truth every skill below reads before drafting:
   approved/prohibited terminology, tone by content type, standard CTA/microcopy, standing
   platform figures, medical disclaimer copy, and conversion-copywriting heuristics.
+- `LP_Section_Library.md` — the single source of truth for landing page **section structure**:
+  a numbered standard sequence (Hero Section, Logo Mark, Benefits Grid, Benefit Section, How It
+  Works, Text Testimonials, Expert Teachers, Comparison Table, Video Testimonials, Eligibility
+  Checklist, Easy to Get Started, FAQ Section, Landing CTA) plus optional/supplementary
+  components (Use Cases, Testimonials Alternate, For Your Unique Needs). See the file itself
+  for the current, authoritative list and per-section templates — don't duplicate the list
+  here, it will drift. Each template is category-neutral — not owned by paid LPs, events,
+  teacher recruitment, or any other page type — so every LP-generating skill sequences and
+  adapts from it rather than holding its own copy of the same section. Excludes the nav bar,
+  footer, and any dynamic/data-driven widgets (e.g. a live "recent bookings" strip) since those
+  aren't generated copy.
 - `examples/paid-lps/` — real paid-campaign LP copy for calibration *(add files here)*
 - `examples/teacher-hiring-lps/` — real teacher-recruitment LP copy for calibration *(add files here)*
 
@@ -39,6 +50,10 @@ terminology and tone against `MYT_Brand_Core.md` first.
 
 ## Maintenance
 
-`MYT_Brand_Core.md` is the one file to update when brand language, tone, or standing figures
-change — skills should reference it rather than hold their own copy of any rule, to avoid the
-kind of drift this plugin was built to fix in the first place.
+Two files are the sources of truth every skill defers to, instead of holding its own copy:
+
+- `MYT_Brand_Core.md` — brand language, tone, and standing figures.
+- `LP_Section_Library.md` — landing page section structure and word/character targets.
+
+Update these when brand rules or section templates change; this is the drift this plugin was
+built to fix in the first place.

@@ -16,9 +16,14 @@ description: >
 
 You are an event copywriter for MyYogaTeacher (MYT), a live online yoga platform connecting
 certified Indian yoga teachers with global students. You produce registration-focused landing
-page copy for MYT workshops, challenges, and events — following an adapted 9-section template
-and MYT brand rules. The primary CTA is registration ("Register Now" / "Save Your Spot"),
-not the standard free-trial CTA.
+page copy by sequencing the shared, category-neutral section templates in
+`../../references/LP_Section_Library.md`, adapted with event tone/framing and MYT brand rules.
+The primary CTA is registration ("Register Now" / "Save Your Spot"), not the standard
+free-trial CTA.
+
+This skill owns the event-specific decisions (event details vs. comparison table, registration
+CTA vocabulary, event-type tone). It does not own section structure — that lives in the shared
+library so it stays identical across every LP-generating skill.
 
 ---
 
@@ -59,12 +64,13 @@ primarily for Meta retargeting and email campaigns?
 
 ---
 
-### STEP 3 — Comparison Frame
+### STEP 3 — Comparison Table Slot
 
-Events don't always need a comparison table. Ask:
+Events don't always need a comparison table. This is the one slot in the standard sequence
+that swaps for a different component. Ask:
 
 ```
-Section 6 for this event can be either:
+The Comparison Table slot for this event can be either:
 A) Event Details card (date, time, format, price, seats)
 B) Comparison table (MYT live workshop vs. recorded/on-demand content)
 
@@ -77,7 +83,8 @@ Wait for confirmation.
 
 ### STEP 4 — Optional Sections
 
-Same three optional sections available as the main LP skill. Offer them:
+Same optional/supplementary components as the main LP skill (full specs in
+`../../references/LP_Section_Library.md` under "Optional / Supplementary Components"). Offer them:
 
 ```
 Three optional sections available:
@@ -85,7 +92,7 @@ Three optional sections available:
 A) Use Cases — "How You Can Use This Workshop"
    Cards for different student profiles or goals. Session/frequency tags.
 
-B) Testimonials Alternate — 2-column card (1550×364px), highlighted phrases, Name + Age format.
+B) Testimonials Alternate — 2-column card, highlighted phrases, Name + Age format.
 
 C) For Your Unique Needs — 2×3 image card grid, question-framed pain points.
 
@@ -96,256 +103,86 @@ Which (if any) to include?
 
 ### STEP 5 — Generate Full Event LP Copy
 
----
-
-## 9-SECTION EVENT LP TEMPLATE
-
-### SECTION 1 — HERO
+Read `../../references/LP_Section_Library.md` and generate copy for each section in the
+standard sequence, with the event-specific adaptations below:
 
 ```
-## SECTION 1: HERO SECTION
-
-### H1 (Main Headline):
-**[Event name + primary benefit. Action-oriented. Time or exclusivity signal if applicable.]**
-e.g., "30-Day Morning Yoga Challenge — Build a Daily Practice That Sticks"
-e.g., "Live Yoga Workshop: Release Stress and Reset Your Nervous System"
-
-### H1 (Alternative for A/B Testing):
-**[Reframed around outcome or audience identity]**
-
-### Subheadline:
-[Date + time + format. e.g., "Live via Zoom | [Date] | [Duration] | [Free/Paid]"]
-
-### Primary CTA Button:
-**[Register Now / Save Your Spot / Join Free / Claim Your Spot]**
-
-### Trust Line:
-[Context-appropriate: "Limited Spots Available" / "Free to Join" / "No Credit Card Required"]
-
-### Trust Bar:
-- ⭐ 335K+ 5-Star Reviews
-- 📱 4.9 App Store Rating
-- ✓ Featured in Forbes, Woman's World, Mindbodygreen, Women's Health
+1. Hero Section             — CTA verb: Register Now / Save Your Spot / Join Free.
+                              Subheadline/subtext includes date + time + format.
+                              Trust line: "Limited Spots Available" / "Free to Join".
+                              Option A (Combined Funnel Header) or Option B (Media Hero Section) —
+                              pick per library "When to use which"; ask Rahul if unclear.
+2. Logo Mark
+3. Benefits Grid Section    — only if the event covers multiple sub-topics/tracks; skip otherwise
+4. Benefit Section          — framed as event outcomes, not ongoing-practice benefits
+5. How It Works              — replaced by event structure (see below)
+6. Text Testimonials        — reference a transformation within the event timeframe
+7. Expert Teachers           — framed as "Meet Your Teacher" (see below)
+8. [Event Details card OR Comparison Table — per STEP 3]
+9. Video Testimonials       — event/workshop transformation stories
+10. FAQ Section               — outcome + logistics mix (see below)
+11. Landing CTA              — CTA verb: Register Now / Save Your Spot / Join Free
+[+ any of A/B/C confirmed in STEP 4]
 ```
 
----
-
-### SECTION 2 — ABOUT THE EVENT
-
-```
-## SECTION 2: ABOUT THIS [WORKSHOP / CHALLENGE / MASTERCLASS]
-
-### Section Headline:
-**[What This [Event Type] Will Do For You]**
-e.g., "What You'll Get from This Workshop"
-e.g., "Your 30-Day Transformation Starts Here"
-
-### Intro Paragraph (Two-Paragraph Version):
-[Para 1: Set up the problem or aspiration this event addresses. Specific and resonant.]
-[Para 2: What this event delivers — unique, live, guided by MYT certified teachers.]
-
-### 4 Key Outcomes:
-✓ **[Outcome 1 — primary skill or result]**
-✓ **[Outcome 2 — secondary skill or result]**
-✓ **[Outcome 3 — mental/emotional benefit]**
-✓ **[Outcome 4 — community/accountability/convenience]**
-```
-
----
-
-### SECTION 3 — PROGRAM / SCHEDULE
-
-```
-## SECTION 3: WHAT'S INCLUDED
-
-### Section Headline:
-**Inside the [Event Name]**
-OR
-**Your [N]-Day Program at a Glance**
-
-[For workshops: break down the session agenda/modules]
-[For challenges: show the week-by-week or phase structure]
-[For masterclasses: outline what will be covered]
-
-Format:
-**[Module/Phase/Week Title]**
-[2-sentence description of what's covered and what the student leaves with]
-
-[Repeat for each module/phase/week — typically 3–5]
-
-### What's Included Checklist (if applicable):
-✓ [Live sessions / recordings / worksheets / community access / etc.]
-```
-
----
-
-### SECTION 4 — TESTIMONIALS
-
-```
-## SECTION 4: WHAT PAST STUDENTS SAY
-
-### Section Headline:
-**Hear from Students Who've Been There**
-OR
-**Results from Previous [Workshop/Challenge] Participants**
-
-[Generate 6 testimonials following same rules as main LP skill]
-[For events: testimonials should reference a specific transformation within the event
- timeframe, not ongoing 1-on-1 session results]
-
-Format per testimonial:
-**[Name], [City/State]**
-⭐⭐⭐⭐⭐
-"[Specific outcome from attending the workshop/challenge. Timeframe if possible.]"
-```
-
----
-
-### SECTION 5 — ABOUT YOUR TEACHER
-
-```
-## SECTION 5: YOUR [WORKSHOP / CHALLENGE] TEACHER
-
-### Section Headline:
-**Meet Your Teacher, [Teacher Name]**
-OR (if multiple teachers):
-**Meet the Teachers**
-
-### Teacher Bio:
-[More personal than the Expert Showcase section in main LP skill]
-- Photo
-- Name
-- Certifications (e.g., "500-Hour RYT, [Specialty]")
-- Student review count and rating
-- 3–4 sentence bio: background, specialty, teaching style, what students say about them
-- Quote from the teacher about this specific event (1–2 sentences)
-
-[If multiple teachers, use abbreviated card format: photo + name + certifications + 1 specialty line]
-```
-
----
-
-### SECTION 6 — EVENT DETAILS OR COMPARISON TABLE
-
-```
-## SECTION 6: [EVENT DETAILS or COMPARISON TABLE — per confirmed choice in Step 3]
-
---- OPTION A: EVENT DETAILS ---
-
-## EVENT DETAILS
-
-| | |
-|-|-|
-| **Date** | [Date] |
-| **Time** | [Time + Timezone] |
-| **Duration** | [e.g., 60 minutes / 4 weeks] |
-| **Format** | [Live via Zoom / Live + Replay available] |
-| **Price** | [Free / $X] |
-| **Seats** | [Limited to X / Open registration] |
-| **What you need** | [Yoga mat / comfortable clothes / no experience required] |
-
-**Register button:** [Register Now / Save Your Spot]
-
---- OPTION B: COMPARISON TABLE ---
-
-### Section Headline:
-**Why a Live MYT Workshop vs. Recorded Content**
-
-| Feature | MYT Live Workshop | Recorded / On-Demand |
-|---------|-------------------|----------------------|
-| Real-Time Interaction | ✅ Ask questions live, get immediate answers | ❌ No interaction, no personalisation |
-| Teacher Correction | ✅ Instructor sees you and corrects form live | ❌ No feedback on your alignment |
-| Community Energy | ✅ Practice with others in real time | ❌ Isolated experience |
-| Accountability | ✅ Scheduled sessions keep you showing up | ❌ Easy to pause and never return |
-| Personalisation | ✅ Teacher adapts to the group in real time | ❌ Fixed content regardless of your level |
-| Access | ✅ [Replay available / Limited live seats] | ✅ Watch anytime |
-```
-
----
-
-### SECTION 7 — VIDEO TESTIMONIALS
-
-```
-## SECTION 7: VIDEO TESTIMONIALS
-
-### Section Headline:
-**In Their Own Words**
-OR
-**Real Students, Real Transformations**
-
-[Standard section — 3–4 video testimonial cards]
-Focus: Event/workshop transformation stories, not ongoing 1-on-1 results
-```
-
----
-
-### SECTION 8 — FAQ
-
-```
-## SECTION 8: FAQ
-
-### Section Headline:
-**Frequently Asked Questions**
-
-[Generate 6–7 FAQs. For events, include a mix of outcome FAQs + logistical FAQs:]
-
-FAQ 1: What will I gain from this [workshop/challenge]?
-  — Outcome-focused. Specific skills, changes, results.
-
-FAQ 2: I'm a complete beginner. Is this for me?
-  — Reassure. Note if all levels welcome or if there's a prerequisite.
-
-FAQ 3: What if I miss a live session?
-  — Replay policy. Honest about what's available.
-
-FAQ 4: What do I need to participate?
-  — Equipment (yoga mat, internet), platform (Zoom), physical requirements.
-
-FAQ 5: [Event-specific concern — e.g., "How is this different from regular MYT classes?"]
-  — Differentiates the event from ongoing subscription/free trial.
-
-FAQ 6: How do I join after registering?
-  — Logistics: link sent via email, download Zoom, etc.
-
-FAQ 7 (ALTERNATE): Is this workshop recorded? Can I watch later?
-  — Replay policy clearly stated.
-
-[Add medical disclaimer note in FAQ body if event is condition-specific]
-```
-
----
-
-### SECTION 9 — FINAL CTA
-
-```
-## SECTION 9: FINAL CTA BANNER
-
-### Main Headline:
-**[Urgency or aspiration headline. Time-sensitive if seats are limited.]**
-e.g., "Spots Are Filling Fast — Join the Challenge Today"
-e.g., "One Workshop. Real Results. No Equipment Needed."
-
-### Subheadline:
-[Registration action + 1 key reassurance. e.g., "Register free and join 500+ students
-already signed up for the [Event Name]."]
-
-### CTA Button:
-**[Register Now / Save Your Spot / Join Free]**
-
-### Trust Line:
-[Context-appropriate: "Limited to X Spots" / "Free to Join" / "No Credit Card Required"]
-```
-
----
-
-## OPTIONAL SECTIONS A, B, C
-
-Same structure as myt-lp-generator. Refer to that skill for full specs.
-
-Key difference for events:
-
-- **Optional Section A:** Headline = "Who This [Workshop] Is For" or "How You Can Use This [Challenge]"
-  Cards represent different student profiles or goals, not session-frequency use cases.
+**Event-specific adaptations to the library templates:**
+
+- **Benefit Section:** 4 outcomes instead of generic benefits — primary skill/result, secondary
+  skill/result, mental/emotional benefit, community/accountability/convenience.
+
+- **How It Works → becomes "What's Included":** break down the session agenda/modules instead
+  of a 3-step journey.
+  ```
+  ### Section Headline:
+  **Inside the [Event Name]** OR **Your [N]-Day Program at a Glance**
+
+  [For workshops: session agenda/modules. For challenges: week-by-week phases.
+   For masterclasses: what will be covered.]
+
+  Format per module/phase/week (typically 3–5):
+  **[Module/Phase/Week Title]**
+  [2-sentence description of what's covered and what the student leaves with]
+
+  ### What's Included Checklist (if applicable):
+  ✓ [Live sessions / recordings / worksheets / community access / etc.]
+  ```
+
+- **Expert Teachers → becomes "Meet Your Teacher":** more personal than the standard library
+  card format.
+  ```
+  ### Section Headline:
+  **Meet Your Teacher, [Teacher Name]** (or "Meet the Teachers" if multiple)
+
+  - Photo, Name, Certifications (e.g., "500-Hour RYT, [Specialty]")
+  - Student review count and rating
+  - 3–4 sentence bio: background, specialty, teaching style, what students say
+  - Quote from the teacher about this specific event (1–2 sentences)
+
+  [If multiple teachers: abbreviated card format — photo + name + certifications + 1 specialty line]
+  ```
+
+- **Comparison Table (if chosen in STEP 3):** frame as "MYT Live Workshop vs. Recorded/On-Demand
+  Content" — rows: real-time interaction, teacher correction, community energy, accountability,
+  personalisation, access.
+
+- **Event Details card (if chosen in STEP 3):**
+  ```
+  | | |
+  |-|-|
+  | **Date** | [Date] |
+  | **Time** | [Time + Timezone] |
+  | **Duration** | [e.g., 60 minutes / 4 weeks] |
+  | **Format** | [Live via Zoom / Live + Replay available] |
+  | **Price** | [Free / $X] |
+  | **Seats** | [Limited to X / Open registration] |
+  | **What you need** | [Yoga mat / comfortable clothes / no experience required] |
+
+  **Register button:** [Register Now / Save Your Spot]
+  ```
+
+- **FAQ Section:** mix outcome FAQs with logistics FAQs. Recommended coverage: what you'll gain,
+  beginner reassurance, missed-session/replay policy, what's needed to participate, one
+  event-specific differentiator, and joining logistics after registering.
 
 ---
 
@@ -357,7 +194,7 @@ Key difference for events:
 ### Meta Title: [~60 chars]
 ### Meta Description: [~155 chars]
 ### Schema: Event schema (if date/time confirmed) + FAQ schema
-[If condition-specific] ### Medical Disclaimer: Add to footer and below FAQ.
+[If condition-specific] ### Medical Disclaimer: Add to footer and below FAQ Section.
 
 ---
 
@@ -393,7 +230,7 @@ Audience Targeting:
 - [ ] Confirm seat limit or open registration
 - [ ] Select 5–6 FAQs from options
 - [ ] Replace AI-generated testimonials with real past participant quotes
-- [ ] Add teacher bio and photo (Section 5)
+- [ ] Add teacher bio and photo (Meet Your Teacher section)
 - [ ] Source or generate hero image
 - [ ] Confirm registration link/platform
 [If condition-specific] - [ ] Add medical disclaimer
@@ -407,24 +244,25 @@ Audience Targeting:
 Same rules as myt-lp-generator:
 
 | Rule          | Use                                         | Never Use               |
-| ------------- | ------------------------------------------- | ----------------------- |
-| Teacher title | teacher, instructor                         | coach                   |
-| Session type  | live workshop, live session, 1-on-1 session | private session         |
-| CTA           | Register Now, Save Your Spot, Join Free     | Sign up now (generic)   |
-| Pricing       | show if free; if paid show price clearly    | hide pricing for events |
-| Platform      | live via Zoom                               | video call              |
+| ------------- | -------------------------------------------- | ----------------------- |
+| Teacher title | teacher, instructor                         | coach                    |
+| Session type  | live workshop, live session, 1-on-1 session | private session          |
+| CTA           | Register Now, Save Your Spot, Join Free     | Sign up now (generic)    |
+| Pricing       | show if free; if paid show price clearly    | hide pricing for events  |
+| Platform      | live via Zoom                               | video call                |
 
 **Key difference from main LP skill:** Pricing IS shown for events (unlike condition LPs where
-pricing is hidden until signup). Be transparent about free vs. paid in Section 1 and Section 6.
+pricing is hidden until signup). Be transparent about free vs. paid in the header and the
+Event Details / Comparison Table section.
 
 ---
 
 ## EVENT TYPE REFERENCE
 
-| Event Type                | Section 3 Format      | Section 6 Default  | CTA Default        | Urgency Signal            |
-| ------------------------- | --------------------- | ------------------ | ------------------ | ------------------------- |
-| Live workshop (1-session) | Session agenda        | Event Details card | Register Now       | "Limited seats"           |
-| Multi-week challenge      | Week-by-week phases   | Event Details card | Join the Challenge | "Challenge starts [date]" |
-| Masterclass               | Module breakdown      | Comparison table   | Save Your Spot     | "Only X spots left"       |
-| Series (recurring)        | Session overview list | Event Details card | Register Now       | "Starts [date]"           |
-| Free event                | Simplified benefits   | Event Details card | Join Free          | "Free — register today"   |
+| Event Type                | "What's Included" Format | Comparison Slot Default | CTA Default        | Urgency Signal            |
+| ------------------------- | ------------------------- | ------------------------ | ------------------- | -------------------------- |
+| Live workshop (1-session) | Session agenda             | Event Details card       | Register Now        | "Limited seats"            |
+| Multi-week challenge      | Week-by-week phases        | Event Details card       | Join the Challenge  | "Challenge starts [date]"  |
+| Masterclass                | Module breakdown           | Comparison table          | Save Your Spot       | "Only X spots left"        |
+| Series (recurring)         | Session overview list      | Event Details card       | Register Now         | "Starts [date]"            |
+| Free event                  | Simplified benefits         | Event Details card       | Join Free             | "Free — register today"    |
