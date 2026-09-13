@@ -1,7 +1,7 @@
 # MyYogaTeacher — Canonical Brand Core
 **Version:** 1.0 (locked)
 **Owner:** Rahul Bohra
-**Last updated:** August 2026 (v1.3)
+**Last updated:** September 2026 (v1.4)
 **Purpose:** Single source of truth for brand voice, terminology, audience, and compliance rules. Every content-generation skill in the MYT plugin(s) should reference this file rather than embedding its own copy of brand rules — that's what keeps future updates from drifting out of sync across skills.
 
 ---
@@ -27,6 +27,7 @@ MyYogaTeacher is an online yoga platform connecting students with expert Indian 
 - Married with children; many in the "sandwich generation" (caring for kids + elderly parents)
 - Busy professionals, time-constrained, predominantly sedentary
 - Self-conscious in gyms/studios; past failed attempts (YouTube, gym memberships) created hesitation
+- **Pain points:** chronic stiffness, joint pain, low energy and posture problems from desk work; time poverty from juggling work, family and caregiving; tried YouTube but lacked personalization and accountability; can't commit to fixed schedules or studio commutes
 - **What they want:** personalized guidance for their specific body, judgment-free accountability, cultural trust, schedule flexibility, a gentle re-entry into movement
 
 **Key messages to echo:**
@@ -34,12 +35,13 @@ MyYogaTeacher is an online yoga platform connecting students with expert Indian 
 - "Authentic yoga, not just fitness"
 - "Guidance I can trust — from teachers who really know yoga"
 - "Something that fits my schedule, not the other way around"
+- "A gentle way back to movement after years of inactivity"
 
 ### 2.2 Prospective Teachers (recruitment content audience)
 - Value pillars: earnings (marketplace-based, not guaranteed), flexibility, marketing/tech handled by MYT, community, global reach, purpose
 - Closing line: *"Your passion. Your expertise. Your schedule. Your global classroom."*
 - Tone runs more aspirational/mission-driven than student-facing copy, but stays warm — never salesy or corporate
-- Full eligibility, earnings, onboarding data lives in the `myt-teacher-hiring-context` skill — this doc doesn't repeat it
+- Full eligibility, earnings, onboarding data lives in `Teacher_Hiring_Context.md` — this doc doesn't repeat it
 
 ### 2.3 Markets
 | Market | Priority |
@@ -55,7 +57,7 @@ MyYogaTeacher is an online yoga platform connecting students with expert Indian 
 **Approved:** "expert," "certified," "1-on-1," "personalized"
 **Prohibited (customer-facing copy):** "coach," "coaching," "real," "private," "personal"
 
-"Certified" is approved and should be used where it strengthens the differentiator — e.g. "certified Indian yoga teachers." It also applies internally as-is (teacher eligibility criteria in `myt-teacher-hiring-context` — 300+ hours TTC, etc.) with no distinction needed between internal and customer-facing use.
+"Certified" is approved and should be used where it strengthens the differentiator — e.g. "certified Indian yoga teachers." It also applies internally as-is (teacher eligibility criteria in `Teacher_Hiring_Context.md` — 300+ hours TTC, etc.) with no distinction needed between internal and customer-facing use.
 
 **"Coach"/"coaching" — no exceptions.** Confirmed: this ban applies to all customer-facing copy with zero carve-outs, including individual teacher specialization titles (e.g. do not write "Fitness Coach," "Wellness Coach," "Therapeutic Yoga Coach" — use "teacher" or a specialization phrase built around "teacher"/"expert" instead).
 
@@ -86,8 +88,8 @@ A live-page audit (Aug 2026) found the terminology rules above weren't yet refle
 |---|---|---|
 | General / student-facing (articles, taxonomy pages) | Warm, encouraging, culturally resonant, judgment-free | Never aggressive-fitness or westernized-wellness-buzzword |
 | Condition-led / YMYL-adjacent | Same warmth, plus medically careful — no overclaiming, no diagnostic language | Disclaimer mandatory (see §6) |
-| Teacher recruitment | Aspirational, mission-driven, still warm — never corporate/salesy | Pair any earnings figure with the marketplace framing rule in `myt-teacher-hiring-context` |
-| Events / workshops | Warm + a genuine urgency/community layer (time-bound, cohort framing) | Confirm: I haven't seen a dedicated tone note for events beyond what's embedded in `myt-lp-event-generator` — worth double-checking that skill's assumptions still match this table |
+| Teacher recruitment (incl. TTC workshops) | Aspirational, mission-driven, still warm — never corporate/salesy | Pair any earnings figure with the marketplace framing rule in `Teacher_Hiring_Context.md` |
+| Events / workshops (student-side) | Warm + a genuine urgency/community layer (time-bound, cohort framing) — no fake scarcity | Category specifics live in `playbooks/free-event-lp.md` and `playbooks/workshop-lp.md` |
 | Philosophy / spiritual | Warm, respectful of tradition, avoids appropriation-flavored language | Lean on "Authentic Indian Yoga Teaching" framing from the content mind map |
 
 **Framing rule that applies everywhere:** "Yoga for [condition]" outperforms "Yoga poses for [condition]" for conversion — default to the condition-first framing unless the content is explicitly a poses roundup.
@@ -144,7 +146,7 @@ Use the short form on LP/product pages where space is tight; use the full form o
 **Also observed on the live homepage (not standing figures, situational/descriptive use only):**
 - Press-mention trust bar: Woman's World, Well+Good, Women's Health, LA Yoga, Yahoo Life, Men's Health magazines
 
-⚠️ **Note:** `myt-teacher-hiring-context` skill still lists its own standing figure as "360+ teachers" — that's now stale against the confirmed 450+ above. Worth updating that skill file to match, or better, having it reference this doc instead of holding its own copy of the number.
+`Teacher_Hiring_Context.md` references these figures instead of holding its own copy (resolved the earlier stale "360+ teachers" figure).
 
 ---
 
@@ -202,4 +204,5 @@ The homepage is Track A in practice — it has a keyworded H1 ("Online Yoga Clas
   - v1.1 (Aug 2026) — confirmed "coach"/"coaching" has zero exceptions (incl. teacher bio titles); added standard CTA/microcopy pattern (§3.1); flagged live-site terminology violations (§3.2); added homepage-confirmed platform figures and a teacher-count/session-count discrepancy vs. the teacher-hiring standing figures (§8)
   - v1.2 (Aug 2026) — updated standing figures to confirmed current numbers (450+ teachers, 100+ GC classes daily); added freshness rule requiring confirmation before reuse; drafted standard medical disclaimer copy (§6, short + full form); live-site cleanup marked deprioritized per Rahul, not an active workstream
   - v1.3 (Aug 2026) — added Conversion-Copywriting Heuristics (§9): two-track model (SEO-blended vs. pure-conversion pages), core heuristics with named frameworks, practical checklist per track
+  - v1.4 (Sep 2026) — folded student pain points + "gentle way back to movement" message from the retired `about-myyogateacher` skill (§2.1); repointed teacher-hiring and event references to `Teacher_Hiring_Context.md` and playbooks (§2.2, §4, §8); TTC workshops use recruitment tone
 

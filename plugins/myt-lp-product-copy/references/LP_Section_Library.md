@@ -1,53 +1,60 @@
-# MYT Landing Page — Section Library
+# MYT Page Copy — Section Library
 
-Shared, reusable templates for every section/component used across MyYogaTeacher landing
-pages. These are **not** owned by any one LP category (paid ads, events, teacher hiring,
-product). Every LP-generating skill picks, sequences, and lightly adapts (tone, CTA
-vocabulary, funnel goal) from this library rather than each holding its own copy — that
-duplication is exactly the brand-drift problem this plugin exists to prevent.
+Shared, reusable templates for every section/component used on MyYogaTeacher landing pages and
+website pages. Components are **not** owned by any page category — category playbooks in
+`playbooks/` pick and order them. Never copy a template into a skill or playbook; point to it.
 
-**Out of scope for this library:** the site navigation bar and footer. Both are fixed across
-every page and are never regenerated as copy.
+**Out of scope:** the site navigation bar, the footer, and dynamic widgets (e.g. a live "recent
+bookings" strip) — fixed or data-driven, never generated as copy.
 
-Word/character counts below are calibrated against a real shipped MYT LP (Figma:
-`Branding-page-updates`, Prenatal page) — treat them as realistic targets, not hard caps.
+**Calibration sources** — word/character counts are realistic targets from shipped pages, not hard caps:
+- Figma `Branding-page-updates` (file key `Gd0skTKGGWundB5QBRqj65`): Prenatal page (node 7635-5187),
+  Hormonal Balance & Women's Health (10352-78), Back Pain V1 (5006-944), Prenatal teacher
+  recruitment (10062-5814)
+- Live production paid-LP hero screenshot (Flexibility, Sep 2026)
+- Shipped copy docs in `examples/`
+
+Figma lags production — confirm against a live page before recalibrating from Figma alone.
+Components marked **⚠️ Provisional** have no shipped source yet; recalibrate them when examples arrive.
 
 ---
 
-## Standard Sequence
+## Component Index
 
-1. Hero Section _(two coequal options: Combined Funnel Header, or Media Hero Section)_
-2. Logo Mark
-3. Benefits Grid Section _(conditional — only when the topic has multiple sub-conditions/needs)_
-4. Benefit Section
-5. How It Works
-6. Text Testimonials
-7. Expert Teachers
-8. Comparison Table
-9. Video Testimonials
-10. Eligibility Checklist _(conditional — recruitment/application pages only)_
-11. Easy to Get Started _(conditional — onboarding/application-flow pages)_
-12. FAQ Section
-13. Landing CTA
+| # | Component | Typical use |
+|---|---|---|
+| 1 | Hero Section (Option A Combined Funnel Header / Option B Media Hero) | Every page |
+| 2 | Logo Mark | Every page |
+| 3 | Benefits Grid Section | Broad topics with sub-needs; teacher hiring "why teach" |
+| 4 | Benefit Section | Most pages |
+| 5 | How It Works | Ongoing service experience |
+| 6 | Text Testimonials | Most pages |
+| 7 | Expert Teachers | Most pages |
+| 8 | Comparison Table | Paid LPs, service pages |
+| 9 | Video Testimonials | Most pages |
+| 10 | Eligibility Checklist | Recruitment / application / prerequisite pages |
+| 11 | Easy to Get Started | Onboarding / application steps |
+| 12 | FAQ Section | Every page |
+| 13 | Landing CTA | Every page |
+| 14 | What's Included ⚠️ | Events, workshops |
+| 15 | Event Details Card ⚠️ | Events, workshops |
+| 16 | Pricing Block ⚠️ | Paid workshops |
+| — | Optional: Use Cases, Testimonials — Alternate Format, For Your Unique Needs | Any page |
 
-A generating skill may reorder, drop, or repeat sections (e.g., an event LP may swap
-Comparison Table for an Event Details card) but should default to this order unless the page
-goal calls for a different flow.
+Order on a page comes from the category playbook, not from these numbers.
 
 ---
 
 ## 1. HERO SECTION
 
-Two named alternatives for the same slot (section 1) — pick one per page, not both. They're
-coequal choices, not a primary/fallback pair: which one to use depends on whether the page's
+Two coequal options for the same slot — pick one per page. Which one depends on whether the page's
 strongest asset is aggregate social proof or a compelling piece of media.
 
 ### Option A — Combined Funnel Header
 
-Built around stat-based trust signals (ratings, press) — and, critically, an **inline lead
-capture form**, not just a plain CTA button. This is the actual live production hero used
-across all paid landing pages; the dev-mode Figma frames checked earlier hadn't been updated
-to reflect it, so the form was missing from this library until now.
+Stat-based trust signals plus an **inline lead capture form**. This is the live production hero on
+all paid student landing pages (confirmed from a production screenshot; the Figma frames lagged and
+lacked the form).
 
 ```
 ### H1 (Main Headline):
@@ -60,15 +67,14 @@ to reflect it, so the form was missing from this library until now.
 ### Subheadline:
 [Benefit-led expansion, ~50–60 chars. e.g. "Build Flexibility and Strength with Personalized Yoga"]
 
-### Lead Capture Form (inline in hero — the CTA lives here, not as a standalone button):
+### Lead Capture Form (inline — the CTA lives here, not as a standalone button):
 - Name field — placeholder text: "Your name"
 - Phone field — country-code selector (flag + dial code dropdown) + placeholder text:
   "Your WhatsApp number"
-- Submit button (this IS the primary CTA): **[Action verb matched to the funnel goal — e.g.
-  "Book a Free Session" / "Register Now" / "Apply Now". Set by the calling skill.]**
+- Submit button (this IS the primary CTA): **[Verb set by the playbook — e.g. "Book a free session"]**
 
 ### Trust Line:
-[Directly beneath the form — e.g. "No Credit Card Required" / "Limited Spots Available".]
+[Directly beneath the form — e.g. "No Credit Card Required".]
 
 ### Trust Bar (2–3 stat items, laurel/badge style):
 - [N]K+ 5 star ratings
@@ -80,61 +86,58 @@ to reflect it, so the form was missing from this library until now.
  into the image; H1/subheadline/form render on top of it.]
 ```
 
-**Form field copy stays fixed** ("Your name" / "Your WhatsApp number") — only the submit
-button's verb changes per funnel goal, same as the CTA verb did before.
+**Form field copy stays fixed** ("Your name" / "Your WhatsApp number") — only the submit button's
+verb changes per page goal.
+
+**External-form variant:** when the CTA sends people to a form elsewhere (e.g. teacher hiring →
+Typeform), keep the Option A structure but replace the inline form with a single CTA button
+("Apply Now"). Seen on the shipped prenatal teacher recruitment page.
 
 ### Option B — Media Hero Section
 
-_Calibrated against a third shipped MYT LP (Figma: `Branding-page-updates`, node 5006-944 —
-"Back Pain - V1 - No video")._
+_Source: Figma node 5006-944 — "Back Pain - V1 - No video"._
 
-Built around showcasing media — the visual isn't decoration here, it's the section's main
-trust-building device, so it's the first field, not the last.
+The media is the section's main trust-building device, so it's the first field.
 
 ```
 ### Hero Visual — Video or Image (required, defines this option):
 [A live-session preview, not a generic lifestyle photo: framed like an in-progress Zoom call.
  Include a "LIVE" badge, an in-call control bar (mute/camera-style icons), and a name tag
- identifying the teacher (e.g. "Coach"). Works as a static image or an actual video loop —
+ identifying the teacher (label it "Teacher"). Works as a static image or a video loop —
  the surrounding copy is identical either way.]
 
 ### H1 (Main Headline):
-**[Keyword/benefit-led. ~30–40 chars — shorter than Option A since there's no A/B alt to
-  balance against. e.g. "1-on-1 Yoga At Home for Back Pain"]**
+**[Keyword/benefit-led. ~30–40 chars — shorter than Option A, no A/B alt. e.g.
+  "1-on-1 Yoga At Home for Back Pain"]**
 
 ### Subtext:
-[One short line, ~5–7 words / ~30–40 chars, naming the format — e.g. "With an Expert Coach,
+[One short line, ~5–7 words / ~30–40 chars, naming the format — e.g. "With an Expert Teacher,
  Live via Zoom".]
 
 ### Primary CTA Button:
-**[Action verb matched to the funnel goal]**
+**[Verb set by the playbook]**
 
 ### Trust Line:
 [Short reassurance microcopy — e.g. "No Credit Card Required".]
 ```
 
-**When to use which:** Option A when the page needs aggregate social proof (ratings, press) to
-build trust fast and doesn't have a strong visual asset to lead with. Option B when there's a
-believable "watch it happen" video or image — the media carries the credibility that the stat
-trust bar would otherwise supply, which is why Option B doesn't also carry a trust bar or an
-A/B headline. Don't combine both trust-building devices on one page.
+The shipped design labels the name tag "Coach" and the subtext "With an Expert Coach" — both are
+banned terms (Brand Core §3). Copy always uses "Teacher".
 
-**Note on Option B's CTA:** confirmed from a Figma dev-mode frame as a plain button (no inline
-form). Given Option A's form was missing from that same Figma file until corrected against a
-live production screenshot, verify against the live page before assuming Option B stays
-button-only — Figma here has lagged production before.
+**When to use which:** Option A when the page needs aggregate social proof and has no strong visual
+asset to lead with. Option B when there's a believable "watch it happen" video or image — the media
+carries the credibility a stat trust bar would otherwise supply, which is why Option B has no trust
+bar or A/B headline. Don't combine both trust devices on one page.
 
-**Adaptation note:** for Option A, the submit-button verb, trust line, and whether pricing
-appears here are the only things that change per page goal — the form fields themselves don't.
-For Option B, the CTA verb and trust line are what change. The rest of whichever option is
-chosen stays fixed.
+**Option B's CTA** was read from Figma as a plain button. Figma lagged production on Option A's
+form, so verify against a live Option B page before assuming it stays button-only.
 
 ---
 
 ## 2. LOGO MARK
 
-A lightweight trust strip that runs immediately after the header — press logos, partner
-logos, or a secondary link. Mostly a visual asset; copy needs are minimal.
+A lightweight trust strip immediately after the hero — press logos, partner logos, or a secondary
+link. Mostly visual; copy needs are minimal.
 
 ```
 ### Eyebrow (optional):
@@ -144,78 +147,76 @@ logos, or a secondary link. Mostly a visual asset; copy needs are minimal.
 **[3–5 words, e.g. "Learn More About Our Teachers"]**
 ```
 
-Use only what the page needs — this section can be logos-only, link-only, or both.
+Logos-only, link-only, or both — use only what the page needs.
 
 ---
 
 ## 3. BENEFITS GRID SECTION
 
-_Calibrated against a second shipped MYT LP (Figma: `Branding-page-updates`, node 10352-78 —
-"1-on-1 Yoga for Hormonal Balance & Women's Health"). Sits right after Logo Mark, ahead of the
-Benefit Section._
+_Sources: Figma node 10352-78 ("1-on-1 Yoga for Hormonal Balance & Women's Health"); node 10062-5814
+("Why Teach With MyYogaTeacher", teacher recruitment)._
 
 ```
 ### Section Headline:
-**[Personalized [Topic] for Your [Need/Goal]] — ~7–9 words / ~50–60 chars.**
+**[e.g. "Personalized Yoga for Your Hormonal Health Needs" / "Why Teach With MyYogaTeacher"]
+  — ~5–9 words / ~30–60 chars.**
 
-### Intro Paragraph:
-[ONE paragraph, ~30–40 words. Name the breadth of the topic — how it shows up differently for
- different people — then bridge to "your practice should reflect what you need."]
+### Intro Paragraph or Line:
+[Student pages: ONE paragraph, ~30–40 words — name the breadth of the topic, then bridge to
+ "your practice should reflect what you need." Recruitment pages: one short line, ~8 words —
+ e.g. "You bring the expertise. We handle the rest."]
 
-### Needs Grid (6 cards, 2×3 layout):
+### Grid (6 cards, 2×3 layout):
 Card format:
-**[Sub-condition / Sub-need Title — 2–4 words]**
-[1 sentence, ~10–15 words. What the practice offers for this specific need.]
+**[Title — 2–4 words]**
+[1–2 sentences, ~10–25 words. What this need/benefit means for the reader.]
 
-### CTA Button:
-**[Matched to funnel goal — e.g. "Book a Free Session"]**
+### CTA Button (optional):
+**[Verb set by the playbook]**
 ```
 
-**When to use:** best for broad topics that naturally break into multiple sub-conditions or
-sub-needs (e.g. hormonal health → PCOS & hormonal imbalance, PMS & painful periods, irregular
-periods, endometriosis & fibroids, fertility-related stress, overall hormonal wellness). This
-section isn't redundant with the Benefit Section that follows it: this one maps the *breadth*
-of the topic (which specific need brought this visitor here), the Benefit Section makes the
-case for MYT's approach generally. Skip entirely on narrower, single-condition pages.
-
-Also confirmed on a teacher-recruitment page (node 10062-5814) as "Why Teach With
-MyYogaTeacher" — same headline+intro+6-card-grid shape, reused for recruitment reasons-to-join
-instead of student sub-conditions. Further evidence this section belongs to the shared library,
-not to paid student-facing LPs specifically.
+**When to use:** student pages on broad topics that break into sub-conditions or sub-needs (e.g.
+hormonal health → PCOS, PMS, irregular periods, endometriosis & fibroids, fertility-related stress,
+overall wellness); teacher hiring pages for the reasons to join. Not redundant with the Benefit
+Section: this maps the *breadth*, the Benefit Section makes the case for MYT's approach. Skip on
+narrow single-condition pages.
 
 ---
 
 ## 4. BENEFIT SECTION
 
-_(Previously "How MYT Can Help" — same template, category-neutral name.)_
+_Sources: Figma node 7635-5187 (Prenatal); prenatal teacher recruitment copy doc (specialization module)._
 
 ```
+### Eyebrow (optional):
+[2–4 words, e.g. "A Specialized Opportunity"]
+
 ### Section Headline:
-**[Personalized [Topic] for [Goal/Stage/Outcome]] — ~8–10 words / ~60 chars.**
+**[e.g. "Personalized Prenatal Yoga for Every Stage of Your Journey"] — ~8–10 words / ~60 chars.**
 
 ### Intro Paragraph:
-[ONE paragraph, ~40–50 words. Open with the problem/aspiration this page addresses —
- specific and relatable — then land on the MYT solution: personalized, certified, live.]
+[~40–50 words. Open with the problem/aspiration this page addresses — specific and relatable —
+ then land on the MYT solution: personalized, certified, live. May split into two short
+ paragraphs.]
 
-### 4 Key Benefits:
+### 4 Key Benefits (student pages; omit on recruitment specialization modules):
 ✓ **[Benefit 1 — primary outcome, ~6–9 words]**
 ✓ **[Benefit 2 — secondary outcome, ~6–9 words]**
 ✓ **[Benefit 3 — mental/emotional or related benefit, ~6–9 words]**
 ✓ **[Benefit 4 — convenience/lifestyle fit, ~6–9 words]**
 ```
 
-**Adaptation note:** tone shifts by audience (empathy-first for condition/pain topics,
-identity-first for audience-specific pages, aspirational for style/lifestyle pages) — the
-calling skill sets this; the section shape doesn't change.
+Tone and framing (empathy-first, identity-first, aspirational) come from the playbook; the shape
+doesn't change.
 
 ---
 
 ## 5. HOW IT WORKS
 
-Describes the **ongoing service experience** — what happens once someone is practicing/
-engaged with MYT (the session/practice journey). Distinct from Easy to Get Started (below),
-which describes the **onboarding/application process** to begin in the first place. A page can
-carry both as separate sections when it needs to show both.
+_Source: Figma node 7635-5187 (Prenatal)._
+
+The **ongoing service experience** — what happens once someone is practicing with MYT. Distinct from
+Easy to Get Started (§11), which covers the steps to **begin**. A page can carry both.
 
 ```
 ### Section Headline:
@@ -225,22 +226,23 @@ carry both as separate sections when it needs to show both.
 [2 sentences, ~18–22 words. Share your situation/goal → a plan is designed for you.]
 
 ### Step 2: [Title, 2–4 words]
-[2 sentences, ~18–22 words. What live delivery looks like — guidance, correction, real-time.]
+[2 sentences, ~18–22 words. What live delivery looks like — guidance, correction, in real time.]
 
 ### Step 3: [Title, 2–4 words]
 [2 sentences, ~18–22 words. How the practice evolves / the long-term outcome.]
 ```
 
-Always 3 steps unless the calling skill has a structural reason for more (e.g. a multi-week
-program breakdown), in which case treat it as a variant, not a redefinition of this template.
+Always 3 steps unless a playbook has a structural reason for more.
 
 ---
 
 ## 6. TEXT TESTIMONIALS
 
+_Source: Figma node 7635-5187 (Prenatal)._
+
 ```
 ### Section Headline:
-**[e.g. "What First-Time [Audience] Are Saying" / "Trusted by [Audience]"] — ~8–12 words.**
+**[e.g. "What First-Time [Audience] Are Saying" / "Trusted by [Audience]"] — ~6–12 words.**
 
 ### Subheadline:
 [1 sentence reinforcing empathy/credibility, ~10–15 words.]
@@ -253,41 +255,47 @@ Format per testimonial:
 ```
 
 **Quality rules:**
-- No "amazing instructor, highly recommend" — every quote names a specific, concrete result.
-- Across the set, include at least one quote referencing a failed prior solution and one
-  referencing emotional/lifestyle impact beyond the physical.
+- Real quotes first. Anything generated is a clearly marked placeholder.
+- No "amazing teacher, highly recommend" — every quote names a concrete result.
+- Across the set, include one quote about a failed prior solution and one about emotional/lifestyle
+  impact beyond the physical.
 
 ---
 
 ## 7. EXPERT TEACHERS
 
-_(Previously "Expert Showcase" — same template, category-neutral name.)_
+_Sources: Figma node 7635-5187 (Prenatal); prenatal teacher recruitment copy doc._
 
 ```
 ### Section Headline:
-**Meet Our [Topic] Experts / Meet Our Certified Yoga Teachers**
+**[e.g. "Meet Our Prenatal Yoga Experts" / "Meet Our Certified Yoga Teachers"]**
 
-### Subheadline:
-[1 sentence on relevant specializations for this page, ~10–15 words.]
+### Subheadline (optional):
+[1 sentence on specializations relevant to this page, ~10–20 words.]
 
-### Teacher Cards (3–4):
+### Teacher Cards (3–6):
 - Photo
 - Name
-- Certifications (e.g., "500-Hour RYT, [Relevant Specialty]")
-- Review count/rating (e.g., "4.9 ★ from [N]+ students")
-- Specializations (2–3 relevant tags)
+- Experience/credential line (e.g. "12 years of teaching experience")
+- Rating (e.g. "4.9 from [N] reviews") — student pages
+- Student quote (optional, 1–2 sentences) — used on recruitment pages
 
-### CTA Button:
-**[Matched to funnel goal — e.g. "Start Your Free Trial"]**
+### CTA Button (optional):
+**[Verb set by the playbook]**
 ```
+
+Events and workshops use this as "Meet Your Teacher": one host with a 3–4 sentence bio and a
+1–2 sentence quote from the teacher about the event.
 
 ---
 
 ## 8. COMPARISON TABLE
 
+_Source: Figma node 7635-5187 (Prenatal); paid-LP copy docs._
+
 ```
 ### Section Headline:
-**MyYogaTeacher vs. [Confirmed comparison frame] — ~8–10 words.**
+**MyYogaTeacher vs. [Comparison frame] — ~6–10 words.**
 
 ### Subheadline:
 [1 sentence framing the differentiation, ~10–15 words.]
@@ -300,19 +308,21 @@ _(Previously "Expert Showcase" — same template, category-neutral name.)_
 | [Attribute 4 — page-specific] | ✅ [Strength] | ❌ [Gap] |
 ```
 
-4–6 rows total. The comparison frame (who/what MYT is being compared against) is set by the
-calling skill per page — the row structure itself doesn't change.
+4–6 rows. The comparison frame and page-specific rows come from the playbook.
 
 ---
 
 ## 9. VIDEO TESTIMONIALS
 
+_Sources: Figma nodes 7635-5187 and 10062-5814._
+
 ```
 ### Section Headline:
-**[Thematic — e.g. "Real People, Real Results/Transformations"] — ~5–8 words.**
+**[Thematic — e.g. "See Why Students Love MyYogaTeacher" / "What Our Teachers Are Saying"] — ~5–8 words.**
 
 ### Video Cards (3–4):
-Thumbnail + play button + name + short caption overlay (~5–10 words per caption).
+Thumbnail + play button + name + descriptor (e.g. "MyYogaTeacher Member") + optional short
+caption (~5–10 words).
 
 ### Rating Strip (optional, if not already shown elsewhere on the page):
 - [N]K+ 5-star reviews
@@ -323,44 +333,41 @@ Thumbnail + play button + name + short caption overlay (~5–10 words per captio
 
 ## 10. ELIGIBILITY CHECKLIST
 
-_New from a teacher-recruitment page (Figma: `Branding-page-updates`, node 10062-5814 — "What
-You'll Need"). Application/recruitment pages only — not applicable to student-facing
-conversion LPs._
+_Source: Figma node 10062-5814 ("What You'll Need", teacher recruitment)._
 
 ```
 ### Section Headline:
 **What You'll Need** (or page-appropriate equivalent, 2–4 words)
 
 ### Requirements Checklist (5–7 items):
-✓ [Requirement 1, ~8–14 words]
-✓ [Requirement 2, ~8–14 words]
-✓ [Requirement 3, ~8–14 words]
-✓ [Requirement 4, ~8–14 words]
-✓ [Requirement 5, ~8–14 words]
+✓ [Requirement, ~4–14 words]
+✓ [Requirement, ~4–14 words]
+✓ [Requirement, ~4–14 words]
+✓ [Requirement, ~4–14 words]
+✓ [Requirement, ~4–14 words]
 
 ### Closing Note (optional):
 [1 sentence, ~12–16 words. A practical heads-up for the application step —
  e.g. "Have your resume and total training hours ready — you'll need both for the application."]
 ```
 
-**When to use:** recruitment/application-type pages (teacher hiring, partner/affiliate
-programs) where eligibility criteria need to be stated upfront, before the applicant commits
-time to applying. Skip on student-facing conversion LPs and events.
+**When to use:** recruitment or application pages, and workshops with prerequisites (e.g. TTC).
+Skip on student conversion pages.
 
 ---
 
 ## 11. EASY TO GET STARTED
 
-_New from the same teacher-recruitment page (node 10062-5814 — "Easy to get started"). Not a
-duplicate of How It Works — see the distinction noted there: this section describes the steps
-to **begin** (sign up, apply, onboard), not the ongoing experience once begun._
+_Source: Figma node 10062-5814 ("Easy to get started", teacher recruitment)._
+
+The steps to **begin** — sign up, apply, onboard — not the ongoing experience (§5 How It Works).
 
 ```
 ### Section Headline:
 **[e.g. "Easy to Get Started" / "Getting Started Is Simple"] — 2–5 words.**
 
 ### Step 1: [Title, 2–5 words]
-[1–2 sentences, ~18–25 words. What happens in this step of signing up/applying.]
+[1–2 sentences, ~18–25 words. What happens in this step.]
 
 ### Step 2: [Title, 2–5 words]
 [1–2 sentences, ~18–25 words.]
@@ -368,68 +375,129 @@ to **begin** (sign up, apply, onboard), not the ongoing experience once begun._
 ### Step 3: [Title, 2–5 words]
 [1–2 sentences, ~18–25 words.]
 
-[Repeat for additional steps — 3 or more, unlike How It Works this isn't capped at 3 —
- if the onboarding/application flow genuinely has more stages.]
+[3 or more steps — add steps if the flow genuinely has more stages.]
 
 ### Closing Tagline (optional):
-[1 sentence, ~10–14 words. A reassurance/summary line beneath the steps —
- e.g. "We bring the students and manage the platform — you focus on teaching."]
+[1 sentence, ~10–14 words — e.g. "We bring the students and manage the platform — you focus on teaching."]
 ```
 
-Numbered badges (1./2./3.) with a connecting vertical line are a common visual treatment for
-this section. **When to use:** any page where the friction being addressed is "how do I
-actually begin" — recruitment/application flows most often, but also usable on a conversion LP
-that wants to walk through the sign-up steps (book → match with a teacher → start practicing)
-separately from how the practice itself works.
+Numbered badges with a connecting vertical line are the usual visual treatment.
 
 ---
 
 ## 12. FAQ SECTION
 
+_Sources: Figma node 7635-5187; prenatal teacher recruitment copy doc._
+
 ```
 ### Section Headline:
-**Frequently Asked Questions**
+**Frequently Asked Questions** (or "FAQs")
 
-### Subheadline:
+### Subheadline (optional):
 [1 short line, ~5–8 words, e.g. "Quick answers to commonly asked questions."]
 
 ### FAQs (6–7 total):
-Q: [~8–16 words]
-A: [2–3 sentences, ~30–45 words]
+Q: [~6–16 words]
+A: [1–3 sentences, ~10–45 words]
 ```
 
-**Recommended coverage** (adapt per page, don't treat as rigid slots): a validating "does this
-work for me" question, a beginner-reassurance question, a timeline/results question, a
-safety/objection question, one page-specific question, and one logistics/frequency question.
+**Coverage** comes from the playbook. Default for student pages: a "does this work for me" question,
+beginner reassurance, timeline/results, safety/objection, one page-specific question, and one
+logistics/frequency question.
 
-**Medical disclaimer trigger:** if the page topic involves pain, a health condition,
-pregnancy/postpartum, or mental health — add a disclaimer note to the relevant FAQ answer and
-flag it for footer placement. This is a per-topic adaptation, not part of every FAQ instance.
+**Medical disclaimer trigger:** if the topic involves pain, a health condition, pregnancy/postpartum,
+or mental health, add the Brand Core §6 short-form disclaimer to the relevant answer and flag it for
+footer placement.
 
 ---
 
 ## 13. LANDING CTA
 
+_Sources: Figma node 7635-5187; prenatal teacher recruitment copy doc._
+
 ```
 ### Main Headline:
-**[Emotionally resonant or action-forward. Addresses the core tension for this audience.] — ~8–12 words.**
+**[Emotionally resonant or action-forward. Addresses the core tension for this audience.] — ~6–12 words.**
 
 ### Subheadline:
-[Primary action + 1 outcome-specific reassurance, ~55–120 chars.]
+[Primary action + 1 outcome-specific reassurance, ~55–140 chars.]
 
 ### CTA Button:
-**[Matched to funnel goal]**
+**[Same verb as the hero]**
 
 ### Trust Line (optional):
-[Context-appropriate — e.g. "No Credit Card Required" / "Limited to X Spots"]
+[e.g. "No Credit Card Required" / "Trusted by [N]+ teachers across the globe"]
+```
+
+---
+
+## 14. WHAT'S INCLUDED ⚠️ Provisional
+
+_No shipped source yet — carried over from the retired event skill's spec. Recalibrate against the
+first event/workshop example._
+
+```
+### Section Headline:
+**[e.g. "Inside the [Event Name]" / "Your [N]-Day Program at a Glance"] — 3–7 words.**
+
+### Modules / Sessions / Weeks (3–5):
+**[Title, 2–5 words]**
+[2 sentences: what's covered and what the attendee leaves with.]
+
+### Included Checklist (optional):
+✓ [Live sessions / recordings / worksheets / community access / certificate]
+```
+
+---
+
+## 15. EVENT DETAILS CARD ⚠️ Provisional
+
+_No shipped source yet — carried over from the retired event skill's spec._
+
+```
+| | |
+|-|-|
+| **Date** | [Date] |
+| **Time** | [Time + timezone] |
+| **Duration** | [e.g. 60 minutes / 4 weeks] |
+| **Format** | [Live via Zoom / Live + replay] |
+| **Price** | [Free / amount] |
+| **Seats** | [Only if a real limit exists] |
+| **What you need** | [e.g. yoga mat, comfortable clothes, no experience required] |
+
+### CTA Button:
+**[Registration verb set by the playbook]**
+```
+
+---
+
+## 16. PRICING BLOCK ⚠️ Provisional
+
+_No shipped source yet. Minimal structure only — confirm layout and fields against the first paid
+workshop example before relying on it._
+
+```
+### Section Headline:
+**[e.g. "Enroll in [Workshop Name]"] — 3–6 words.**
+
+### Price:
+[Amount + currency; payment plan if one exists]
+
+### What's Covered (3–5 bullets):
+✓ [Inclusion, ~3–8 words]
+
+### CTA Button:
+**[Verb set by the playbook]**
+
+### Reassurance Line (optional):
+[Only real policy — e.g. refund terms as confirmed by the user. Never invent.]
 ```
 
 ---
 
 ## OPTIONAL / SUPPLEMENTARY COMPONENTS
 
-These are available to any page, on top of the standard sequence — not tied to any LP
-category.
+Available to any page on top of a playbook's recipe.
 
 ### Use Cases
 
@@ -467,13 +535,4 @@ Each card = a question-framed pain point as overlay text on a lifestyle image.
 Format: "[Relatable situation]?" (e.g., "Desk work causing aches and pains?")
 ```
 
-Best for broad pages serving multiple sub-audiences or multiple pain points.
-
----
-
-## Explicitly excluded from this library
-
-- **Navigation bar** — fixed sitewide, not regenerated per page.
-- **Footer** — fixed sitewide, not regenerated per page.
-- **"Recent bookings" live activity strip** (real-time names/times/ratings) — a dynamic,
-  data-driven widget, not static copy. Out of scope for copy generation.
+Best for broad pages serving multiple sub-audiences or pain points.

@@ -9,7 +9,8 @@ description: >
   for copy for an app popup, in-app message, product card, push notification, feature announcement,
   brochure, or similar — including vague or informal requests like "need copy for our new referral
   feature" where the format isn't yet specified. Always reference MYT_Brand_Core.md for
-  terminology, tone, and CTA rules before drafting.
+  terminology, tone, and CTA rules before drafting. Landing pages and website pages go to
+  myt-page-copy instead.
 ---
 
 # MyYogaTeacher — Product/Feature Copy Generator
@@ -54,16 +55,15 @@ Skip anything already answered in the initial request — don't re-ask.
 | Product card | Title + 1–2 line description | No room for a full value-prop paragraph |
 | Feature announcement (in-app or email) | 100–250 words | Benefit-led, one primary CTA |
 | Brochure / PDF handout | Varies widely | Ask for page count or word target explicitly — don't assume |
-| Communication doc (internal memo, teacher-facing update) | Varies | If teacher-facing, match tone guidance in `myt-teacher-hiring-context` |
+| Communication doc (internal memo, teacher-facing update) | Varies | If teacher-facing, use the teacher recruitment tone (Brand Core §4) and facts from `Teacher_Hiring_Context.md` |
 
 These are proposed starting points for the intake conversation, not hard rules — always confirm
 against what the requester actually needs rather than locking to the table.
 
 ## Step 3 — Draft
 
-Produce **one draft**, not multiple strategic variants (confirmed preference — this differs from
-`myt-lp-generator`, which produces variants; this skill doesn't). Apply brand core terminology and
-tone rules throughout.
+Produce **one draft**, not multiple strategic variants (confirmed preference). Apply brand core
+terminology and tone rules throughout.
 
 If the copy touches pricing, cancellation, free-trial terms, or other policy specifics: don't
 invent exact figures or policy language from memory — flag anything uncertain for the requester to

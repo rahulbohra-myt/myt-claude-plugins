@@ -7,7 +7,7 @@ GitHub-synced so updates roll out to the team automatically once connected.
 
 | Plugin | Status | Description |
 |---|---|---|
-| `myt-lp-product-copy` | ✅ Live | Landing page and product/feature copy generation |
+| `myt-lp-product-copy` | ✅ Live | Landing page, website page, and product/feature copy generation |
 | Articles/taxonomy plugin | 🔜 Planned | Content briefs and article generation |
 | LP → Astro code plugin | 🔜 Planned | Converts finished LP copy into shippable `.astro` files |
 | Google Ads audit plugin | 🔜 Under consideration | Campaign diagnostics — separate from copy generation by design |
@@ -28,4 +28,4 @@ GitHub-synced so updates roll out to the team automatically once connected.
 
 Each plugin should carry its own brand/reference source of truth (e.g. `myt-lp-product-copy`
 bundles `MYT_Brand_Core.md`) rather than duplicating rules across plugins, to avoid the kind of
-brand-language drift this setup was built to prevent.
+brand-language drift this setup was built to prevent. Development rules live in `CLAUDE.md`.

@@ -1,7 +1,7 @@
 {
   "name": "myt-lp-product-copy",
-  "version": "1.0.0",
-  "description": "Generate on-brand landing page and product/feature copy for MyYogaTeacher — paid ad LPs, event/workshop LPs, teacher recruitment LPs, and product/feature assets (popups, banners, cards, brochures, communication docs). All skills reference the bundled MYT Brand Core for terminology, tone, and conversion-copywriting standards.",
+  "version": "1.1.0",
+  "description": "Generate on-brand MyYogaTeacher page copy — paid ad LPs (Meta/Google), free event LPs, workshop LPs, teacher hiring LPs, and website pages (home, services, product, about, contact) — plus product/feature assets (popups, banners, cards, brochures). One guided flow: intake, section outline from the Figma-calibrated section library, copy, feedback loop.",
   "author": {
     "name": "Rahul Bohra"
   },
