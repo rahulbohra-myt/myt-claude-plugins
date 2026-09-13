@@ -24,8 +24,9 @@ Section names refer to `LP_Section_Library.md`.
 Brand Core §9.1 names the homepage as the Track A model: keyworded H1 plus the full conversion
 toolkit.
 
-Hero Section → Logo Mark → Benefit Section → How It Works → Text Testimonials → Expert Teachers →
-Comparison Table → Video Testimonials → FAQ Section → Landing CTA
+Hero Section (Option A — Combined Funnel Header; the homepage starts Combined Funnel Onboarding) →
+Logo Mark → Benefit Section → How It Works → Text Testimonials → Expert Teachers → Comparison Table →
+Video Testimonials → FAQ Section → Landing CTA
 
 ### Services / product page (provisional — e.g. 1-on-1 sessions, group classes)
 Hero Section → Logo Mark → Benefit Section → [Benefits Grid Section] → How It Works → Expert

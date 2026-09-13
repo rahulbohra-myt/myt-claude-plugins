@@ -35,8 +35,8 @@ references/
   examples/                  real shipped copy per category (see examples/README.md)
 ```
 
-**Calibration status:** paid ad LPs and teacher hiring LPs are calibrated against shipped pages.
-Free event, workshop, and website page playbooks are provisional until real examples are added to
+**Calibration status:** paid ad, free event, and teacher hiring LPs are calibrated against shipped
+pages. Workshop and website page playbooks are provisional until real examples are added to
 `references/examples/`.
 
 ## Out of scope, by design

@@ -14,12 +14,12 @@ MYT serves two audiences: **students** (live online yoga — ~90% of pages) and 
 
 | Category | Side | Typical CTA destination |
 |---|---|---|
-| Paid ad LP (Meta / Google) | Student | Free-session booking / onboarding |
-| Free event LP (e.g. yoga for sciatica) | Student | Event registration |
-| Workshop LP, free or paid (e.g. nutrition) | Student | Registration / payment |
+| Paid ad LP (Meta / Google) | Student | Combined Funnel Onboarding — name + WhatsApp form in the hero (required) |
+| Free event LP — weekly sessions, quarterly main events (most-used event category) | Student | Registration form, usually in the hero; other CTAs scroll to it |
+| Workshop LP, free or paid (e.g. nutrition) — less common | Student | Registration / payment |
 | TTC workshop LP | Teacher | Registration |
 | Teacher hiring LP (Meta ads) | Teacher | Typeform |
-| Website page (home, services, product, about, contact) | Mostly student | Varies |
+| Website page (home, services, product, about, contact) | Mostly student | Varies; homepage uses Combined Funnel Onboarding |
 
 Every generation follows this workflow (implemented in `skills/myt-page-copy`):
 1. **Intake** — side, category, goal, traffic source, CTA + destination, tone, available assets.

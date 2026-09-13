@@ -7,7 +7,7 @@ here — never generated drafts.
 |---|---|---|
 | `paid-lps/` | Paid ad LPs (Meta / Google) | 5 pages |
 | `teacher-hiring-lps/` | Teacher hiring LPs | 1 page — more specializations wanted |
-| `free-event-lps/` | Free event LPs | Empty — needed |
+| `free-event-lps/` | Free event LPs | 1 page — quarterly main event wanted |
 | `workshop-lps/` | Workshop LPs (free, paid, nutrition, TTC) | Empty — needed |
 | `website-pages/` | Home, services, product, about, contact | Empty — needed |
 

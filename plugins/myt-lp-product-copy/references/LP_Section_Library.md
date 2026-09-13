@@ -12,6 +12,8 @@ bookings" strip) — fixed or data-driven, never generated as copy.
   Hormonal Balance & Women's Health (10352-78), Back Pain V1 (5006-944), Prenatal teacher
   recruitment (10062-5814)
 - Live production paid-LP hero screenshot (Flexibility, Sep 2026)
+- Free event: live page `myyogateacher.com/events/yoga-for-sciatica` + Figma `Event-Page` (file key
+  `v2qJ9xybT22QBDwbMbr4ou`, node 2-2202 — dummy copy, structure only)
 - Shipped copy docs in `examples/`
 
 Figma lags production — confirm against a live page before recalibrating from Figma alone.
@@ -23,7 +25,7 @@ Components marked **⚠️ Provisional** have no shipped source yet; recalibrate
 
 | # | Component | Typical use |
 |---|---|---|
-| 1 | Hero Section (Option A Combined Funnel Header / Option B Media Hero) | Every page |
+| 1 | Hero Section (Option A Combined Funnel Header / Option B Media Hero) | Student pages — Option A required on paid ad LPs and the homepage |
 | 2 | Logo Mark | Every page |
 | 3 | Benefits Grid Section | Broad topics with sub-needs; teacher hiring "why teach" |
 | 4 | Benefit Section | Most pages |
@@ -39,6 +41,8 @@ Components marked **⚠️ Provisional** have no shipped source yet; recalibrate
 | 14 | What's Included ⚠️ | Events, workshops |
 | 15 | Event Details Card ⚠️ | Events, workshops |
 | 16 | Pricing Block ⚠️ | Paid workshops |
+| 17 | Event Registration Hero | Event pages |
+| 18 | Meet {Teacher} | Pages led by one teacher (events) |
 | — | Optional: Use Cases, Testimonials — Alternate Format, For Your Unique Needs | Any page |
 
 Order on a page comes from the category playbook, not from these numbers.
@@ -52,9 +56,10 @@ strongest asset is aggregate social proof or a compelling piece of media.
 
 ### Option A — Combined Funnel Header
 
-Stat-based trust signals plus an **inline lead capture form**. This is the live production hero on
-all paid student landing pages (confirmed from a production screenshot; the Figma frames lagged and
-lacked the form).
+The hero for **Combined Funnel Onboarding** — MYT's default new-student onboarding flow. Stat-based
+trust signals plus an inline name + WhatsApp form that starts onboarding. **Required on every paid
+ad LP**, and used on the homepage. (Confirmed from a production screenshot; the Figma frames lagged
+and lacked the form.)
 
 ```
 ### H1 (Main Headline):
@@ -89,9 +94,9 @@ lacked the form).
 **Form field copy stays fixed** ("Your name" / "Your WhatsApp number") — only the submit button's
 verb changes per page goal.
 
-**External-form variant:** when the CTA sends people to a form elsewhere (e.g. teacher hiring →
-Typeform), keep the Option A structure but replace the inline form with a single CTA button
-("Apply Now"). Seen on the shipped prenatal teacher recruitment page.
+**Button-only layout (teacher hiring):** the shipped prenatal teacher recruitment page uses this
+layout with a single "Apply Now" button → Typeform in place of the form. That page isn't Combined
+Funnel Onboarding — it only borrows the layout.
 
 ### Option B — Media Hero Section
 
@@ -124,10 +129,11 @@ The media is the section's main trust-building device, so it's the first field.
 The shipped design labels the name tag "Coach" and the subtext "With an Expert Coach" — both are
 banned terms (Brand Core §3). Copy always uses "Teacher".
 
-**When to use which:** Option A when the page needs aggregate social proof and has no strong visual
-asset to lead with. Option B when there's a believable "watch it happen" video or image — the media
-carries the credibility a stat trust bar would otherwise supply, which is why Option B has no trust
-bar or A/B headline. Don't combine both trust devices on one page.
+**When to use which:** Option A is required on paid ad LPs and the homepage, because their CTA starts
+Combined Funnel Onboarding — never swap it for Option B there. Option B is for other student pages
+where a believable "watch it happen" video or image should lead; the media carries the credibility a
+stat trust bar would otherwise supply, which is why Option B has no trust bar or A/B headline. Don't
+combine both trust devices on one page. Event pages use the Event Registration Hero (§17) instead.
 
 **Option B's CTA** was read from Figma as a plain button. Figma lagged production on Option A's
 form, so verify against a live Option B page before assuming it stays button-only.
@@ -154,26 +160,31 @@ Logos-only, link-only, or both — use only what the page needs.
 ## 3. BENEFITS GRID SECTION
 
 _Sources: Figma node 10352-78 ("1-on-1 Yoga for Hormonal Balance & Women's Health"); node 10062-5814
-("Why Teach With MyYogaTeacher", teacher recruitment)._
+("Why Teach With MyYogaTeacher", teacher recruitment); live free event page ("In 45 minutes, you
+will")._
 
 ```
 ### Section Headline:
-**[e.g. "Personalized Yoga for Your Hormonal Health Needs" / "Why Teach With MyYogaTeacher"]
-  — ~5–9 words / ~30–60 chars.**
+**[e.g. "Personalized Yoga for Your Hormonal Health Needs" / "Why Teach With MyYogaTeacher" /
+  "In 45 minutes, you will"] — ~4–9 words / ~20–60 chars.**
 
 ### Intro Paragraph or Line:
 [Student pages: ONE paragraph, ~30–40 words — name the breadth of the topic, then bridge to
  "your practice should reflect what you need." Recruitment pages: one short line, ~8 words —
- e.g. "You bring the expertise. We handle the rest."]
+ e.g. "You bring the expertise. We handle the rest." Event pages: omit — the headline frames the grid.]
 
 ### Grid (6 cards, 2×3 layout):
 Card format:
-**[Title — 2–4 words]**
-[1–2 sentences, ~10–25 words. What this need/benefit means for the reader.]
+**[Title — 2–5 words]**
+[1–2 sentences, ~7–25 words. What this need/benefit/outcome means for the reader.]
 
-### CTA Button (optional):
+### CTA Button (optional — omit on event pages):
 **[Verb set by the playbook]**
 ```
+
+**Event variant:** a headline naming the session length ("In 45 minutes, you will") and 6 outcome
+cards — what the attendee will do or learn in the session. Titles 2–5 words; one-line descriptions
+~7–12 words. No intro, no CTA.
 
 **When to use:** student pages on broad topics that break into sub-conditions or sub-needs (e.g.
 hormonal health → PCOS, PMS, irregular periods, endometriosis & fibroids, fertility-related stress,
@@ -185,16 +196,18 @@ narrow single-condition pages.
 
 ## 4. BENEFIT SECTION
 
-_Sources: Figma node 7635-5187 (Prenatal); prenatal teacher recruitment copy doc (specialization module)._
+_Sources: Figma node 7635-5187 (Prenatal); prenatal teacher recruitment copy doc (specialization
+module); live free event page ("This is for you if...")._
 
 ```
 ### Eyebrow (optional):
 [2–4 words, e.g. "A Specialized Opportunity"]
 
 ### Section Headline:
-**[e.g. "Personalized Prenatal Yoga for Every Stage of Your Journey"] — ~8–10 words / ~60 chars.**
+**[e.g. "Personalized Prenatal Yoga for Every Stage of Your Journey" / "This is for you if..."]
+  — ~4–10 words / ~20–60 chars.**
 
-### Intro Paragraph:
+### Intro Paragraph (omit on event pages):
 [~40–50 words. Open with the problem/aspiration this page addresses — specific and relatable —
  then land on the MYT solution: personalized, certified, live. May split into two short
  paragraphs.]
@@ -205,6 +218,10 @@ _Sources: Figma node 7635-5187 (Prenatal); prenatal teacher recruitment copy doc
 ✓ **[Benefit 3 — mental/emotional or related benefit, ~6–9 words]**
 ✓ **[Benefit 4 — convenience/lifestyle fit, ~6–9 words]**
 ```
+
+**Event variant ("This is for you if..."):** headline plus 4 audience-fit bullets, ~12–16 words
+each, describing the situations of people who should register (e.g. repeat attendees, first-timers,
+people who want live guidance instead of videos). No intro, no CTA.
 
 Tone and framing (empathy-first, identity-first, aspirational) come from the playbook; the shape
 doesn't change.
@@ -284,8 +301,7 @@ _Sources: Figma node 7635-5187 (Prenatal); prenatal teacher recruitment copy doc
 **[Verb set by the playbook]**
 ```
 
-Events and workshops use this as "Meet Your Teacher": one host with a 3–4 sentence bio and a
-1–2 sentence quote from the teacher about the event.
+Pages led by a single teacher (e.g. events) use Meet {Teacher} (§18) instead.
 
 ---
 
@@ -433,8 +449,9 @@ _Sources: Figma node 7635-5187; prenatal teacher recruitment copy doc._
 
 ## 14. WHAT'S INCLUDED ⚠️ Provisional
 
-_No shipped source yet — carried over from the retired event skill's spec. Recalibrate against the
-first event/workshop example._
+_No shipped source yet — carried over from the retired event skill's spec. The shipped free event
+page covers "what you'll get" with a Benefits Grid event variant instead, so free events don't use
+this; kept for multi-session workshops. Recalibrate against the first workshop example._
 
 ```
 ### Section Headline:
@@ -452,7 +469,9 @@ first event/workshop example._
 
 ## 15. EVENT DETAILS CARD ⚠️ Provisional
 
-_No shipped source yet — carried over from the retired event skill's spec._
+_No shipped source yet — carried over from the retired event skill's spec. The shipped free event
+page puts time selection inside the registration form ("Pick a Time"), so it has no details card;
+use this only if a workshop or main event reference shows one._
 
 ```
 | | |
@@ -492,6 +511,74 @@ workshop example before relying on it._
 ### Reassurance Line (optional):
 [Only real policy — e.g. refund terms as confirmed by the user. Never invent.]
 ```
+
+---
+
+## 17. EVENT REGISTRATION HERO
+
+_Source: live page `myyogateacher.com/events/yoga-for-sciatica`. Figma `Event-Page` node 2-2202
+structure check pending._
+
+The hero for event pages. The page's one real action is submitting this registration form — every
+other CTA on the page scrolls to it. The form usually sits in the hero; if the user wants it as
+section 2, keep the hero's copy elements here and place the form panel (same copy) directly below.
+
+```
+### H1 (Main Headline):
+**[The session's promise — ~35–45 chars. e.g. "Gentle Yoga Guidance for Sciatica Pain"]**
+
+### Subheadline:
+[2 sentences, ~25–35 words: length + format + who leads it, what attendees will do, where they
+ join from. e.g. "A 45-minute live session with a certified teacher — slow, beginner-friendly
+ movements for your lower back, hips, and hamstrings, with live corrections and modifications.
+ Follow along from your mat at home."]
+
+### Feature Items (3, label + sublabel):
+- **[Label, 2–3 words]** — [Sublabel, 2–4 words]   e.g. Live on Zoom — Personalized check-in
+- **[Label]** — [Sublabel]                          e.g. All levels welcome — Beginner to Advanced
+- **[Label]** — [Sublabel]                          e.g. Free Event — No credit card needed
+(Cover format, level, and price.)
+
+### Social Proof (2 short stats):
+[e.g. "100+ students reported relief" | "4.9 avg"]
+
+### Registration Form Panel:
+- Panel heading: **[2–4 words, e.g. "Save your seat"]**
+- Panel subtext: [~6–10 words — effort + seat limit, e.g. "Takes 20 seconds · Seats are limited to 20"]
+- Form fields — fixed, don't generate (Full Name, Email Address, Phone (For Reminders), Pick a Time)
+- Submit button: **[2 words, e.g. "Register Free"]**
+- Line below button: [~5–7 words, e.g. "Free · Live on Zoom · Not recorded"]
+- Consent note and system states (no session scheduled, load errors) — fixed, don't generate
+```
+
+State a seat limit only if it's real.
+
+---
+
+## 18. MEET {TEACHER}
+
+_Source: live page `myyogateacher.com/events/yoga-for-sciatica` ("Meet Your Teacher"). Figma
+`Event-Page` node 2-2202 structure check pending (e.g. photo treatment)._
+
+One teacher introduced in depth — for pages led by a single teacher, such as events. Pages showing
+several teachers use Expert Teachers (§7).
+
+```
+### Section Headline:
+**Meet {Teacher}** — e.g. "Meet Your Teacher" or "Meet [Teacher's first name]"
+
+### Teacher Name:
+[Full name]
+
+### Bio:
+[3 sentences, ~45–55 words: certification/credentials → education/training → years of experience
+ and who they've helped, tied to the page topic.]
+
+### Credential Tags (3–5):
+[2–3 words each — e.g. "AYUSH Certified", "200+ Hours TTC", "Yoga Therapy", "YCB Level 3"]
+```
+
+No CTA on the shipped page. Credentials and experience must be real — ask for them, never invent.
 
 ---
 

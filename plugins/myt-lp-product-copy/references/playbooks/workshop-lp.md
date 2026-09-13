@@ -11,7 +11,8 @@ payment destination (confirm URL)
 ## When this applies
 
 A multi-session or deep-dive program with a defined curriculum — e.g. a nutrition workshop
-(student-side) or a TTC workshop (teacher-side). Single free live sessions use `free-event-lp.md`.
+(student-side) or a TTC workshop (teacher-side). Used less often than free events. Single free live
+sessions and quarterly main events use `free-event-lp.md`.
 
 ## Category intake (on top of the shared intake)
 
@@ -32,11 +33,11 @@ Section names refer to `LP_Section_Library.md`.
 
 | # | Section | Include | Category notes |
 |---|---|---|---|
-| 1 | Hero Section | Always | Name the workshop + core outcome; paid/free clear |
+| 1 | Event Registration Hero | Always | Likely the same registration-form hero as free events — confirm against a workshop example. Name the workshop + core outcome; paid/free clear |
 | 2 | Logo Mark | Always | |
 | 3 | Benefit Section | Always | Outcomes of completing the workshop |
 | 4 | What's Included | Always | Curriculum by module/session |
-| 5 | Expert Teachers | Always | "Meet Your Teacher" framing |
+| 5 | Meet {Teacher} | Always | One host; use Expert Teachers if several teachers lead |
 | 6 | Text Testimonials | If available | Past participants |
 | 7 | Eligibility Checklist | Conditional | TTC or any workshop with prerequisites |
 | 8 | Pricing Block | Paid only | |

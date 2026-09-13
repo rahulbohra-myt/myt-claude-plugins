@@ -1,5 +1,10 @@
 # Free Event LP Examples
 
-Empty — add real shipped copy for free student events (e.g. "Yoga for Sciatica", "Yoga for Back
-Pain" live sessions). Once examples land here, calibrate `playbooks/free-event-lp.md` and the
-provisional event components in `LP_Section_Library.md` against them.
+Real shipped copy for free student events — recurring weekly sessions and quarterly main events
+(e.g. International Yoga Day). One file per page.
+
+| File | Event | Source |
+|---|---|---|
+| `yoga-for-sciatica-free-event.md` | Gentle Yoga for Sciatica Pain (recurring session) | Live page + Figma `Event-Page` node 2-2202 |
+
+Wanted: a quarterly main event page (e.g. International Yoga Day) and one more recurring session.

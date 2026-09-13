@@ -44,15 +44,16 @@ confirm.
    | Category | Playbook |
    |---|---|
    | Paid ad LP (Meta / Google) | `paid-ads-lp.md` |
-   | Free event LP | `free-event-lp.md` |
-   | Workshop LP, free or paid (nutrition, TTC, …) | `workshop-lp.md` |
+   | Free event LP — weekly sessions, quarterly main events (e.g. International Yoga Day) | `free-event-lp.md` |
+   | Workshop LP, free or paid (nutrition, TTC, …) — less common | `workshop-lp.md` |
    | Teacher hiring LP | `teacher-hiring-lp.md` |
    | Website page (home, services, product, about, contact) | `website-page.md` |
 
 3. **Goal:** what should a visitor do, and why does this page exist now?
 4. **Traffic source:** Meta, Google, email, organic, other.
-5. **CTA and destination:** button text, and where it goes — free-session booking/onboarding, event
-   registration, payment, Typeform, or another page (get the URL if known).
+5. **CTA and destination:** button text, and where it goes — Combined Funnel Onboarding (MYT's
+   default new-student onboarding; always the case for paid ad LPs and the homepage), an event
+   registration form, payment, Typeform, or another page (get the URL if known).
 6. **Topic/offer specifics**, then the playbook's category intake questions.
 7. **Assets:** real testimonials, teacher profiles, video or image media, the ad copy for message match.
 8. **Tone:** propose one from Brand Core §4 and the category examples; the user confirms or adjusts.
@@ -89,7 +90,9 @@ user to confirm or change the outline.
 
 Write every section in the confirmed order, following its library template: each element labelled
 (H1, Subheadline, Step 1 title, …), at its word or character target. No unfilled placeholder
-headlines. Mark unverified testimonials or teacher data as placeholders.
+headlines. Mark unverified testimonials or teacher data as placeholders. Form input fields
+(onboarding and registration forms) are fixed — write only the copy around them: panel heading,
+subtext, button, and the line under the button.
 
 Output format:
 

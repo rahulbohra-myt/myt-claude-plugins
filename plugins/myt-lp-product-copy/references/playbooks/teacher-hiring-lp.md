@@ -28,7 +28,7 @@ Section names refer to `LP_Section_Library.md`. Order follows the latest shipped
 
 | # | Section | Include | Category notes |
 |---|---|---|---|
-| 1 | Hero Section | Always | Option A structure, but the CTA is a plain "Apply Now" button — the application form lives on Typeform, so no inline name/WhatsApp form. Subheadline as dot-separated benefits ("Earn From Home · Flexible Schedule · Teach Worldwide") |
+| 1 | Hero Section | Always | Button-only layout (library §1): "Apply Now" → Typeform. Not Combined Funnel Onboarding, so no name/WhatsApp form. Subheadline as dot-separated benefits ("Earn From Home · Flexible Schedule · Teach Worldwide") |
 | 2 | Logo Mark | Always | Reuse the press logo row |
 | 3 | Benefits Grid Section | Always | "Why Teach With MyYogaTeacher" — 6 value cards built from the value pillars |
 | 4 | Benefit Section | Specialization pages | Eyebrow + headline + two short paragraphs, no bullet list |

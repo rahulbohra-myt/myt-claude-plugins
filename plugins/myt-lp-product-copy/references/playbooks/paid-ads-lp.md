@@ -3,8 +3,8 @@
 **Side:** Student · **Track:** B — pure conversion (`MYT_Brand_Core.md` §9)
 **Status:** Calibrated — shipped copy in `examples/paid-lps/` plus Figma pages (Prenatal, Hormonal
 Balance, Back Pain) and a live production hero screenshot.
-**Default CTA:** "Book a free session" → free-session booking / onboarding (confirm destination URL)
-· Trust line: "No Credit Card Required"
+**CTA:** "Book a free session" → **Combined Funnel Onboarding** (MYT's default new-student
+onboarding, started by the hero's name + WhatsApp form) · Trust line: "No Credit Card Required"
 
 ## When this applies
 
@@ -24,9 +24,8 @@ A student-facing page that paid Meta or Google traffic lands on. Page types:
 3. **Message match:** the ad headline / primary text driving traffic — the H1 must mirror its promise
 4. Primary pain point or goal of the audience
 5. Real student testimonials and teacher profiles available? (yes / no / partial)
-6. Strong media for the hero (video or live-session image)? → decides Hero Option A vs B
-7. Does the topic split into distinct sub-needs? → decides Benefits Grid Section
-8. Comparison frame — propose the default below, confirm
+6. Does the topic split into distinct sub-needs? → decides Benefits Grid Section
+7. Comparison frame — propose the default below, confirm
 
 ## Section recipe
 
@@ -34,7 +33,7 @@ Section names refer to `LP_Section_Library.md`.
 
 | # | Section | Include | Category notes |
 |---|---|---|---|
-| 1 | Hero Section | Always | Option A (Combined Funnel Header with name + WhatsApp form) by default; Option B (Media Hero) only when a strong media asset exists |
+| 1 | Hero Section | Always | **Option A — Combined Funnel Header, required.** Its name + WhatsApp form starts Combined Funnel Onboarding. Never Option B |
 | 2 | Logo Mark | Always | Press logos |
 | 3 | Benefits Grid Section | Conditional | Broad topics with sub-needs (e.g. hormonal health) |
 | 4 | Benefit Section | Always | Framing per type table below |
