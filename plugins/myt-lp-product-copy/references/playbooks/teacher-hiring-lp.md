@@ -4,7 +4,8 @@
 **Status:** Calibrated on one shipped page — `examples/teacher-hiring-lps/prenatal-teacher-recruitment-lp.md`
 and Figma `Branding-page-updates` node 10062-5814. Ask for more examples when a new specialization
 page comes up.
-**Default CTA:** "Apply Now" → **Typeform** (get the campaign's URL at intake) · Trust line:
+**Default CTA:** "Apply Now" → **Typeform that registers the teacher for a hiring webinar**
+(`https://myyogateacher.pro.typeform.com/to/xrEU3XrN` — confirm per campaign) · Trust line:
 "Trusted by [N]+ teachers across the globe" (N from Brand Core §8)
 **Facts source:** `Teacher_Hiring_Context.md`
 
@@ -17,7 +18,7 @@ business with MYT") or a specialization (prenatal, yoga therapy, etc.).
 
 1. Specialization, or a generic hiring page
 2. Meta ad copy driving traffic (message match)
-3. Typeform URL
+3. Typeform — the default webinar-registration form above, or a campaign-specific one
 4. Specialization-specific eligibility (e.g. prenatal/postnatal certification + 1 year experience)
 5. Teacher cards available (name, years of experience, a student quote each)?
 6. Teacher testimonial videos available? (the shipped pages reuse one set)

@@ -103,11 +103,16 @@ Most applicants move through the full process within a couple of weeks.
 
 ## Application Destination
 
-**Teacher hiring LP CTAs route to a Typeform** (confirmed Sep 2026). Get the campaign's Typeform
-URL at intake — don't assume one.
+**Teacher hiring LP CTAs route to a Typeform that registers the teacher for a hiring webinar**
+(confirmed Sep 2026):
+
+`https://myyogateacher.pro.typeform.com/to/xrEU3XrN`
+
+Use this as the default; confirm at intake whether a campaign uses a different form. Don't describe
+what happens after the webinar beyond the application process above unless the user confirms it.
 
 `teacher.myyogateacher.com` is the teacher portal/login. Older recruitment LPs (e.g.
-`/apply/prenatal`) pointed there; new pages use Typeform.
+`/apply/prenatal`) pointed there; new pages use the Typeform.
 
 ---
 

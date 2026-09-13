@@ -18,7 +18,7 @@ MYT serves two audiences: **students** (live online yoga — ~90% of pages) and 
 | Free event LP — weekly sessions, quarterly main events (most-used event category) | Student | Registration form, usually in the hero; other CTAs scroll to it |
 | Workshop LP, free or paid (e.g. nutrition) — less common | Student | Registration / payment |
 | TTC workshop LP | Teacher | Registration |
-| Teacher hiring LP (Meta ads) | Teacher | Typeform |
+| Teacher hiring LP (Meta ads) | Teacher | Typeform — registers for a hiring webinar |
 | Website page (home, services, product, about, contact) | Mostly student | Varies; homepage uses Combined Funnel Onboarding |
 
 Every generation follows this workflow (implemented in `skills/myt-page-copy`):
